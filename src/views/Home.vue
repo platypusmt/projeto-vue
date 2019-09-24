@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <v-app>
     <Menu/>
     <Banner/>
     <Rodape/>
-  </div>
+  </v-app>
 </template>
 
 <style>

@@ -11,11 +11,20 @@
                     </router-link>
                 </v-col>
                 <v-col cols="1" class="text-right">
-                    <router-link to="./painel/login">
-                        <v-btn icon>
-                            <v-icon size="30" color="white">mdi-account-box</v-icon>
-                        </v-btn>
-                    </router-link>
+                    
+                    <v-tooltip bottom>
+                  <template v-slot:activator="{ on }">
+                    <v-btn
+                      icon
+                      large
+                      to="/painel/login"
+                      v-on="on"
+                    >
+                      <v-icon color='white'>mdi-account-box</v-icon>
+                    </v-btn>
+                  </template>
+                  <span>Login Administrativo</span>
+                </v-tooltip>
                 </v-col>
             </v-row>
            
