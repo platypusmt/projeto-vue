@@ -9,7 +9,7 @@
 <script>
   import MenuAdm from '../../components/Menu-Adm'
   import Dados from '../../components/Dados'
-  import Rodape from '../../components/Rodape'
+  import Rodape from '../../components/RodapeAdm'
 
   export default {
    

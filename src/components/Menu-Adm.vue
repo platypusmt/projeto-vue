@@ -20,10 +20,18 @@
         </v-list-item>
         <v-list-item @click="Produtos">
           <v-list-item-action>
-            <v-icon>mdi-contact-mail</v-icon>
+            <v-icon>mdi-briefcase-edit</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Produtos</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item @click="Usuarios">
+          <v-list-item-action>
+            <v-icon>mdi-account-edit</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Usuários</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -79,6 +87,9 @@
       },
       Produtos () {
         this.$router.push('/painel/produtos')
+      },
+      Usuarios () {
+        this.$router.push('/painel/usuarios')
       }
     },
   }

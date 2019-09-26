@@ -1,7 +1,7 @@
 <template>
     <div>
     <Menu/>
-    Cursos
+    Vendas
     <Rodape/>
   </div>
 </template>
@@ -11,7 +11,6 @@ import Menu from '../components/Menu'
 import Rodape from '../components/Rodape'
 
 export default {
-  
   components: {
     Menu,
     Rodape

@@ -10,20 +10,20 @@
                         <img height="50" src="../assets/logo.png" alt="">
                     </router-link>
                 </v-col>
-                <v-col cols="1" class="text-right">
-                    
-                    <v-tooltip bottom>
+                <v-col cols="1" class="text-right pt-5">
+                
+                <v-tooltip bottom>
                   <template v-slot:activator="{ on }">
                     <v-btn
                       icon
                       large
-                      to="/painel/login"
+                      to="/"
                       v-on="on"
                     >
-                      <v-icon color='white'>mdi-account-box</v-icon>
+                      <v-icon color='white'>mdi-cart</v-icon>
                     </v-btn>
                   </template>
-                  <span>Login Administrativo</span>
+                  <span>Carrinho</span>
                 </v-tooltip>
                 </v-col>
             </v-row>
@@ -70,6 +70,14 @@
                     <v-list-item-title>Professores</v-list-item-title>
                 </v-list-item-content>
                 </v-list-item>
+                <v-list-item @click="Vendas">
+                <v-list-item-action>
+                    <v-icon>mdi-shopping</v-icon>
+                </v-list-item-action>
+                <v-list-item-content>
+                    <v-list-item-title>Produtos</v-list-item-title>
+                </v-list-item-content>
+                </v-list-item>
                 <v-list-item @click="Sobre">
                 <v-list-item-action>
                     <v-icon>mdi-information-outline</v-icon>
@@ -109,6 +117,10 @@ export default {
         Professores() {
             this.$router.push('/professores')
         },
+        Vendas() {
+            this.$router.push('/vendas')
+        }
+        ,
         Sobre() {
             this.$router.push('/sobre')
         },

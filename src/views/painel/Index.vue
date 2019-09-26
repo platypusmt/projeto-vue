@@ -1,14 +1,20 @@
 <template>
-  <v-app>
+  <div>
   <MenuAdm/>
-  
+
+  <v-content>
+    <v-container>
+      Index
+    </v-container>
+  </v-content>
+
   <Rodape/>
-  </v-app>
+  </div>
 </template>
 
 <script>
   import MenuAdm from '../../components/Menu-Adm'
-  import Rodape from '../../components/Rodape'
+  import Rodape from '../../components/RodapeAdm'
 
   export default {
    
