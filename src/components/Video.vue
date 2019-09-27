@@ -1,7 +1,7 @@
 <template>
   <v-content>
     <v-container>
-      Video
+      <video src="../assets/video-teste.mp4"></video>
     </v-container>
   </v-content>
 </template>
