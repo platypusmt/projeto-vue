@@ -90,7 +90,7 @@
         { text: 'Marca', value: 'marca' },
         { text: 'Estoque', value: 'qtn' },
         { text: 'Preço', value: 'valor' },
-        { text: 'Actions', value: 'action', sortable: false },
+        { text: 'Ações', value: 'action', sortable: false },
       ],
       desserts: [],
       editedIndex: -1,

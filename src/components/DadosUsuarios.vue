@@ -32,14 +32,9 @@
                     <v-text-field v-model="editedItem.name" label="Nome"></v-text-field>
                   </v-col>
                   <v-col cols="12" sm="6" md="6">
-                    <v-text-field v-model="editedItem.calories" label="Marca"></v-text-field>
+                    <v-text-field v-model="editedItem.email" label="E-mail"></v-text-field>
                   </v-col>
-                  <v-col cols="12" sm="6" md="6">
-                    <v-text-field v-model="editedItem.fat" label="Quantidade"></v-text-field>
-                  </v-col>
-                  <v-col cols="12" sm="6" md="6">
-                    <v-text-field v-model="editedItem.carbs" label="Preço"></v-text-field>
-                  </v-col>
+                  
                 </v-row>
               </v-container>
             </v-card-text>
@@ -88,17 +83,20 @@
           value: 'nome',
         },
         { text: 'E-mail', value: 'email' },
-        { text: 'Actions', value: 'action', sortable: false },
+        { text: 'Senha', value: 'senha' },
+        { text: 'Ações', value: 'action', sortable: false },
       ],
       desserts: [],
       editedIndex: -1,
       editedItem: {
         nome: '',
         email: '',
+        senha: '',
       },
       defaultItem: {
         nome: '',
         email: '',
+        senha: '',
       },
     }),
 
@@ -124,10 +122,12 @@
           {
             nome: 'Zappa',
             email: 'zappa@zappamaestro.com.br',
+            senha: '000',
           },
           {
             nome: 'Zappa',
-            email: 'Zappa',
+            email: 'zappa',
+            senha: '123',
           },
           
         ]
