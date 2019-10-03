@@ -1,7 +1,9 @@
 <template>
    <v-content>
     <v-footer
-        color="black"       
+        color="black" 
+        fixed
+        botton      
         >
         <span class="white--text">Zappa - Instituto Musical</span>
     </v-footer>

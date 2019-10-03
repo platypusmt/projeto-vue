@@ -1,26 +1,19 @@
 <template>
   <div>
   <MenuAdm/>
-
-  <v-content>
-    <v-container>
-      Usuários
-    </v-container>
-  </v-content>
-  
-  <Rodape/>
+  <DadosUsuarios/>
   </div>
 </template>
 
 <script>
   import MenuAdm from '../../components/Menu-Adm'
-  import Rodape from '../../components/RodapeAdm'
+  import DadosUsuarios from '../../components/DadosUsuarios'
 
   export default {
    
     components: {
       MenuAdm,
-      Rodape
+      DadosUsuarios
     }
   }
   

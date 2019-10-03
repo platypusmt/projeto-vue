@@ -40,24 +40,32 @@
               <v-card-text>
                 <v-form>
                   <v-text-field
-                    label="Username"
-                    name="login"
+                    label="Usuário"
+                    v-model="login"
                     prepend-icon="mdi-account-box"
                     type="text"
                   ></v-text-field>
 
                   <v-text-field
                     id="password"
-                    label="Password"
-                    name="password"
+                    label="Senha"
+                    v-model="password"
                     prepend-icon="mdi-lock"
                     type="password"
                   ></v-text-field>
+                  <v-alert 
+                  transition="scale-transition" 
+                  type="error" 
+                  :value="!!alerta">
+                  
+                  {{ alerta}}
+
+                  </v-alert>
                 </v-form>
               </v-card-text>
               <v-card-actions>
                 <div class="flex-grow-1"></div>
-                <v-btn color="secondary" @click="acessar">Login</v-btn>
+                <v-btn color="secondary" @click="acessar">Entrar</v-btn>
               </v-card-actions>
             </v-card>
           </v-col>
@@ -69,9 +77,25 @@
 
 <script>
 export default {
+  data () {
+    return {
+      login: '',
+      password: '',
+      alerta: ''
+    }
+  },
   methods: {
     acessar () {
-      this.$router.push('/painel')
+      if (this.login === 'zappa' && this.password === '123') {
+        this.$ls.set('user', {
+          login: this.login,
+          nome: 'Ewerton Seixas',
+          email: 'seixas.ewerton@hotmail.com'
+        })
+        this.$router.push('/painel')
+      } else {
+        this.alerta = 'Usuário ou senha não correspondentes.'
+      }
     }
   }
 }
