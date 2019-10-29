@@ -2,10 +2,13 @@
   <v-app>
     <Menu/>
     <Banner/>
+    <v-content>
+      <v-container>
+        <h1 class="pt-5 text-center">Conheça a Zappa Maestro</h1>
+        <h3 class="text-center">Diversos cursos e atividades para todas as idades.</h3>
+      </v-container>
+    </v-content>
     <Destaques/>
-    <div class="pb-10">
-    </div>
-    <BackTop/>
     <Rodape/>
   </v-app>
 </template>
@@ -18,7 +21,6 @@
 import Menu from '../components/Menu'
 import Banner from '../components/Banner'
 import Destaques from '../components/Destaques'
-import BackTop from '../components/BackTop'
 import Rodape from '../components/Rodape'
 
 export default {
@@ -26,12 +28,9 @@ export default {
     Menu,
     Banner,
     Destaques,
-    BackTop,
     Rodape
   },
-  methods: {
-    
-  },
+  
   
 }
 </script>

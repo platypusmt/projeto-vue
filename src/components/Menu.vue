@@ -2,30 +2,28 @@
     <nav>
         <v-toolbar height="80" color="black" id="scroll-target">
             <v-row class="d-flex justify-content-around">
-                <v-col cols="1">
-                    <v-app-bar-nav-icon color="white" @click="drawer = !drawer" ></v-app-bar-nav-icon>
-                </v-col>
-                <v-col class="text-center">
+                <v-col  class="text-left">
                     <router-link to="/">
                         <img height="50" src="../assets/logo.png" alt="">
                     </router-link>
                 </v-col>
-                <v-col cols="1" class="text-right pt-5">
-                
-                <v-tooltip bottom>
-                  <template v-slot:activator="{ on }">
-                    <v-btn
-                      icon
-                      large
-                      to="/"
-                      v-on="on"
-                    >
-                      <v-icon color='white'>mdi-cart</v-icon>
-                    </v-btn>
-                  </template>
-                  <span>Carrinho</span>
-                </v-tooltip>
+                <v-col  class="hidden-sm-and-down mt-5">
+                    <v-toolbar-items class="">
+                        <v-btn @click="Cursos" color="black" class="white--text">Cursos</v-btn>
+                        <v-btn @click="Professores" color="black" class="white--text">Professores</v-btn>
+                        <v-btn @click="Vendas" color="black" class="white--text">Produtos</v-btn>
+                        <v-btn @click="Sobre" color="black" class="white--text">Sobre</v-btn>
+                        <v-btn @click="Login" color="black" class="white--text">Login</v-btn>
+                        
+                    </v-toolbar-items>
                 </v-col>
+                
+                <v-col  class="text-right">
+                    <v-app-bar-nav-icon class="hidden-md-and-up" color="white" @click="drawer = !drawer" ></v-app-bar-nav-icon>
+                </v-col>
+                
+                
+                
             </v-row>
            
             
@@ -99,7 +97,11 @@
         </v-navigation-drawer>
     </nav>
 </template>
-
+<style>
+ .fonte{
+     font-size: 50px;
+ }
+</style>
 <script>
 export default {
   data() {
