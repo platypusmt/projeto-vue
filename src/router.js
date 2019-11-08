@@ -34,6 +34,16 @@ export default new Router({
       component: () => import('./views/Cursos.vue')
     },
     {
+      path: '/relatorio',
+      name: 'relatorio',
+      component:() => import('./views/Relatorio.vue')
+    },
+    {
+      path: '/violao',
+      name: 'violao',
+      component: () => import('./views/Cursoviolao.vue')
+    },
+    {
       path: '/painel',
       name: 'painel-index',
       component: () => import('./views/painel/Index.vue')

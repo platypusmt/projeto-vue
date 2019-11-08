@@ -33,64 +33,64 @@
         <v-navigation-drawer 
         v-model="drawer"
         app
-        absolute
         temporary
+        right
         height="auto" width="100%"
         >
         
-            <v-list dense >
+            <v-list dense class=" d-flex flex-column align-end">
                 <v-list-item>
                 <v-list-item-action>
                     <v-app-bar-nav-icon color="black" @click="drawer = !drawer" ></v-app-bar-nav-icon>
                 </v-list-item-action>
                 </v-list-item>
                 <v-list-item @click="Homepage">
-                <v-list-item-action>
-                    <v-icon>mdi-home</v-icon>
-                </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>Página inicial</v-list-item-title>
                 </v-list-item-content>
+                <v-list-item-action>
+                    <v-icon>mdi-home</v-icon>
+                </v-list-item-action>
                 </v-list-item>
                 <v-list-item @click="Cursos">
-                <v-list-item-action>
-                    <v-icon>mdi-guitar-electric</v-icon>
-                </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>Cursos</v-list-item-title>
                 </v-list-item-content>
+                <v-list-item-action>
+                    <v-icon>mdi-guitar-electric</v-icon>
+                </v-list-item-action>
                 </v-list-item>
                 <v-list-item @click="Professores">
-                <v-list-item-action>
-                    <v-icon>mdi-teach</v-icon>
-                </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>Professores</v-list-item-title>
                 </v-list-item-content>
+                <v-list-item-action>
+                    <v-icon>mdi-teach</v-icon>
+                </v-list-item-action>
                 </v-list-item>
                 <v-list-item @click="Vendas">
-                <v-list-item-action>
-                    <v-icon>mdi-shopping</v-icon>
-                </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>Produtos</v-list-item-title>
                 </v-list-item-content>
+                <v-list-item-action>
+                    <v-icon>mdi-shopping</v-icon>
+                </v-list-item-action>
                 </v-list-item>
                 <v-list-item @click="Sobre">
-                <v-list-item-action>
-                    <v-icon>mdi-information-outline</v-icon>
-                </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>Sobre</v-list-item-title>
                 </v-list-item-content>
+                <v-list-item-action>
+                    <v-icon>mdi-information-outline</v-icon>
+                </v-list-item-action>
                 </v-list-item>
                 <v-list-item @click="Login">
-                <v-list-item-action>
-                    <v-icon>mdi-account</v-icon>
-                </v-list-item-action>
                 <v-list-item-content>
                     <v-list-item-title>Login</v-list-item-title>
                 </v-list-item-content>
+                <v-list-item-action>
+                    <v-icon>mdi-account</v-icon>
+                </v-list-item-action>
                 </v-list-item>
             </v-list>
                             
@@ -106,7 +106,7 @@
 export default {
   data() {
       return {
-          drawer: false
+          drawer: null
       }
   },
   methods: {

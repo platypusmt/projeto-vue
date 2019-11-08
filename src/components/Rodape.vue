@@ -19,6 +19,8 @@
         >
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
+        <v-btn text
+          class="mx-4 white--text"  to="/relatorio">Fale conosco</v-btn>
       </v-card-text>
 
       <v-card-text class="white--text pt-0">

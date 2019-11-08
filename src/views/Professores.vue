@@ -18,6 +18,7 @@
                 class="white--text align-end"
                 height="200px"
                 src="../assets/tiago.jpg"
+                alt="Foto do professor tocando bateria."
               >
                 <v-card-title>Tiago Lucas</v-card-title>
               </v-img>
@@ -47,6 +48,7 @@
                 class="white--text align-end"
                 height="200px"
                 src="../assets/jazzy.jpg"
+                alt="Foto da professora cantando ao microfone."
               >
                 <v-card-title>Jazzy DiAngelis</v-card-title>
               </v-img>
@@ -76,6 +78,7 @@
                 class="white--text align-end"
                 height="200px"
                 src="../assets/caio.jpg"
+                alt="Foto do professor tocando violão."
               >
                 <v-card-title>Caio Fabian</v-card-title>
               </v-img>
