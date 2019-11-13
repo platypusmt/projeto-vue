@@ -9,7 +9,7 @@
              <v-col class="mt-4" cols="12" md="7">
                 <h2>Aprenda a tocar violão e guitarra de maneira simples, divertida e descomplicada.</h2>
                 <h2>Conheça o instrumento, posições corretas e desenvolva habilidades.</h2>
-                <p>• Aulas para todas as idades, crianças a partir de 5 anos.</p>
+                <p class="mt-4">• Aulas para todas as idades, crianças a partir de 5 anos.</p>
                 <p>• Aulas individuais e em grupos.</p>
                 <p>• Horários flexíveis.</p>
              </v-col>
